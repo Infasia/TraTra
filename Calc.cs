@@ -23,9 +23,17 @@ namespace WpfApp1
         {
             return a * b;
         }
-        public int devide(int a, int b)
+        public double devide(double a, double b)
         {
             return a / b;
+        }
+        public double sq(double a)
+        {
+            return Math.Sqrt(a);
+        }
+        public double kva(double a, double b)
+        {
+            return Math.Pow(a,b);
         }
     }
 }

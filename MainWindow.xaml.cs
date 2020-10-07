@@ -9,6 +9,7 @@ using System.Windows.Data;
 using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
+using System.Windows.Media.Animation;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
@@ -99,7 +100,7 @@ namespace WpfApp1
                 {
                     a = Convert.ToInt32(A.Text);
                     b = Convert.ToInt32(B.Text);
-                    result.Content = Convert.ToString(cl.multy(a, b));
+                    result.Content = Convert.ToString(cl.devide(a, b));
                 }
                 catch
                 {
@@ -108,6 +109,42 @@ namespace WpfApp1
             }
             else
                 MessageBox.Show("Write numer");
+        }
+
+        private void sq_click(object sender, RoutedEventArgs e )
+        {
+            int a;
+            if (A.Text != "")
+            {
+                try
+                {
+                    a = Convert.ToInt32(A.Text);
+                    cl.sq(a);
+                }
+                catch
+                {
+                    MessageBox.Show($"error in text is bykVA");
+                }
+            }
+        }
+
+        private void kvak_Click(object sender, RoutedEventArgs e)
+        {
+            double a;
+            double b;
+            if (A.Text != "" && B.Text != "")
+            {
+                try
+                {
+                    a = Convert.ToDouble(A.Text);
+                    b = Convert.ToDouble(B.Text);
+
+                }
+                catch
+                {
+                    MessageBox.Show($"error in text is bykVA");
+                }
+            }
         }
     }
 }
