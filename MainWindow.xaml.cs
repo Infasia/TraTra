@@ -25,7 +25,7 @@ namespace WpfApp1
 
         public void Sum_Button(object sender, RoutedEventArgs e)
         {
-            // XAAFKEQJGOEQJNKGOQKEGNAGJOAEJ
+            
             int a;
             int b;
             if (A.Text != "" && B.Text != "")
