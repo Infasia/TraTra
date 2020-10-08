@@ -35,5 +35,37 @@ namespace WpfApp1
         {
             return Math.Pow(a,b);
         }
+        public double sin (double a)
+        {
+            return Math.Sin(a);
+        }
+        public double cos (double a)
+        {
+            return Math.Cos(a);
+        }
+        public double tan(double a)
+        {
+            return Math.Tan(a);
+        }
+        public double cot(double a)
+        {
+            return 1 / Math.Tan(a);
+        }
+        public double sec (double a)
+        {
+            return 1 / Math.Cos(a);
+        }
+        public double csc (double a)
+        {
+            return 1 / Math.Sin(a);
+        }
+        public double ln(double a )
+        {
+            return Math.Log10(a);
+        }
+        public double log(double a )
+        {
+            return Math.Log(a);
+        }
     }
 }

@@ -19,20 +19,29 @@
         <Grid Grid.Row="0"
               Grid.Column="0">
             <Label Content="Write B" Margin="0,82,0,-82.5"/>
-            <Label Content="Write A" Margin="-10,0,10,-0.5"/>
+            <Label Content="Write A"/>
             <Label x:Name="result" Margin="151,82,-151,98.5"/>
-            <TextBox x:Name="A" Width="100" Height="50" Margin="0,32,147,129.5"/>
-            <TextBox x:Name="B" Width="100" Height="50" Margin="0,110,147,51.5"/>
+            <TextBox x:Name="A" Width="100" Height="50" Margin="10,32,135,128"/>
+            <TextBox x:Name="B" Width="100" Height="50" Margin="10,110,135,50"/>
+            <Button Width="100" Margin="135,179,10,10" Content="Read ME" Click="read_click"/>
         </Grid>
 
         <Grid Grid.Row="1"
               Grid.Column="0">
-            <Button Width="100" Margin="137,10,10,176" Content="Sum" x:Name="ButSum" Click="Sum_Button"/>
-            <Button  Width="100" Content=" Minus" x:Name="minus" Click="Minus_Button" Margin="10,10,137,176"/>
-            <Button  Width="100" x:Name="multy" Content="Multy" Click="Multy_Button" Margin="10,44,137,144"/>
-            <Button Width="100" x:Name="devide" Click="Devide_Click" Margin="137,44,10,143" Content="Devide"/>
-            <Button Width="100" x:Name="sq" Content="Koren" Click="sq_click" Margin="10,72,137,116"/>
-            <Button x:Name="kvad" Content="Kvadrat" Margin="137,73,10,115" Click="kvak_Click"/>
+            <Button Margin="137,12,10,176" Content="+" x:Name="ButSum" Click="Sum_Button"/>
+            <Button  Width="100" Content="-" x:Name="minus" Click="Minus_Button" Margin="10,12,135,176"/>
+            <Button  Width="100" x:Name="X" Content="x" Click="Multy_Button" Margin="10,44,135,144"/>
+            <Button x:Name="devide" Click="Devide_Click" Margin="137,44,10,143" Content="/"/>
+            <Button Width="100" x:Name="sq" Content="Koren" Click="sq_click" Margin="10,72,135,116"/>
+            <Button x:Name="kvad" Content="Kvadrat" Margin="137,71,10,116" Click="kvak_Click"/>
+            <Button Width="100" Margin="10,98,135,90" Content="sin" Click="sin_click"/>
+            <Button Margin="137,98,10,89" Content="cos" Click="cos_click"/>
+            <Button Width="100" Margin="10,124,135,64" Content="tan" Click="tan_click"/>
+            <Button Margin="137,152,10,35" Content="cot" Click="cot_click"/>
+            <Button Margin="137,125,10,62" Content="sec" Click="sec_click"/>
+            <Button Margin="12,152,135,35" Content="ln" Click="ln_click"/>
+            <Button Margin="12,179,135,8" Content="csc" Click="csc_click"/>
+            <Button Margin="137,179,10,8" Content="log" Click="log_click"/>
         </Grid>
 
     </Grid>

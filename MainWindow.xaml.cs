@@ -119,12 +119,16 @@ namespace WpfApp1
                 try
                 {
                     a = Convert.ToInt32(A.Text);
-                    cl.sq(a);
+                    result.Content = cl.sq(a);
                 }
                 catch
                 {
                     MessageBox.Show($"error in text is bykVA");
                 }
+            }
+            else
+            {
+                MessageBox.Show("Error");
             }
         }
 
@@ -138,13 +142,81 @@ namespace WpfApp1
                 {
                     a = Convert.ToDouble(A.Text);
                     b = Convert.ToDouble(B.Text);
-
+                    result.Content = cl.kva(a, b);
                 }
                 catch
                 {
                     MessageBox.Show($"error in text is bykVA");
                 }
             }
+        }
+
+        private void sin_click(object sender, RoutedEventArgs e)
+        {
+            int a;
+            if (A.Text != "")
+            {
+                try
+                {
+                    a = Convert.ToInt32(A.Text);
+                    result.Content = cl.sin(a);
+                }
+                catch
+                {
+                    MessageBox.Show($"error in text is bykVA");
+                }
+            }
+            else
+            {
+                MessageBox.Show("Error");
+            }
+        }
+
+        private void cos_click(object sender, RoutedEventArgs e)
+        {
+            int a;
+            a = Convert.ToInt32(A.Text);
+            result.Content = cl.cos(a);
+        }
+
+        private void tan_click(object sender, RoutedEventArgs e)
+        {
+            int a;
+            a = Convert.ToInt32(A.Text);
+            result.Content = cl.tan(a);
+        }
+
+        private void sec_click(object sender, RoutedEventArgs e)
+        {
+            int a;
+            a = Convert.ToInt32(A.Text);
+            result.Content = cl.sec(a);
+        }
+
+        private void cot_click(object sender, RoutedEventArgs e)
+        {
+            int a;
+            a = Convert.ToInt32(A.Text);
+            result.Content = cl.cot(a);
+        }
+
+        private void read_click(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("Там где надо 1 число вводить его в поле А !!!!!");
+        }
+
+        private void ln_click(object sender, RoutedEventArgs e)
+        {
+            int a;
+            a = Convert.ToInt32(A.Text);
+            result.Content = cl.ln(a);
+        }
+
+        private void csc_click(object sender, RoutedEventArgs e)
+        {
+            int a;
+            a = Convert.ToInt32(A.Text);
+            result.Content = cl.csc(a);
         }
     }
 }
