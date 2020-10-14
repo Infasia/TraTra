@@ -72,5 +72,9 @@ namespace WpfApp1
             int x = 10;
             return Math.Pow(x,a);
 		}
+        public double aas(double a)
+		{
+            return Math.Abs(a);
+		}
     }
 }

@@ -230,5 +230,12 @@ namespace WpfApp1
             a = Convert.ToDouble(A.Text);
             result.Content = cl.log(a);
         }
-    }
+
+		private void abs_Click(object sender, RoutedEventArgs e)
+		{
+            double a;
+            a = Convert.ToDouble(A.Text);
+            result.Content = cl.aas(a);
+		}
+	}
 }

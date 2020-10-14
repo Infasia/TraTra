@@ -46,8 +46,9 @@
 
 		<Grid Grid.Row="0"
 			  Grid.Column="1">
-			<Button Margin="10,10,38,181" Content="Hyp"/>
+			<Button Margin="10,19,38,170" Content="Hyp"/>
 			<Button Margin="10,45,38,141" Content="10(x)" Click="xx_Click"/>
+			<Button Margin="10,74,38,112" Content="abs" Click="abs_Click"/>
 		</Grid>
 	</Grid>
 </Window>
