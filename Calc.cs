@@ -67,5 +67,10 @@ namespace WpfApp1
         {
             return Math.Log(a);
         }
+        public double xx(double a)
+		{
+            int x = 10;
+            return Math.Pow(x,a);
+		}
     }
 }

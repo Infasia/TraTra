@@ -23,7 +23,7 @@
             <Label x:Name="result" Margin="151,82,-151,98.5"/>
             <TextBox x:Name="A" Width="100" Height="50" Margin="10,32,135,128"/>
             <TextBox x:Name="B" Width="100" Height="50" Margin="10,110,135,50"/>
-            <Button Width="100" Margin="135,179,10,10" Content="Read ME" Click="read_click"/>
+            <Button Width="100" Margin="283,385,-138,-196" Content="Read ME" Click="read_click"/>
         </Grid>
 
         <Grid Grid.Row="1"
@@ -41,8 +41,13 @@
             <Button Margin="137,125,10,62" Content="sec" Click="sec_click"/>
             <Button Margin="12,152,135,35" Content="ln" Click="ln_click"/>
             <Button Margin="12,179,135,8" Content="csc" Click="csc_click"/>
-            <Button Margin="137,179,10,8" Content="log" Click="log_click"/>
+            <Button Margin="137,179,10,8" Content="log" Click="log_Click"/>
         </Grid>
 
-    </Grid>
+		<Grid Grid.Row="0"
+			  Grid.Column="1">
+			<Button Margin="10,10,38,181" Content="Hyp"/>
+			<Button Margin="10,45,38,141" Content="10(x)" Click="xx_Click"/>
+		</Grid>
+	</Grid>
 </Window>

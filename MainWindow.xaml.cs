@@ -218,5 +218,17 @@ namespace WpfApp1
             a = Convert.ToInt32(A.Text);
             result.Content = cl.csc(a);
         }
+        private void xx_Click(object sender, RoutedEventArgs e)
+		{
+            double a;
+            a = Convert.ToDouble(A.Text);
+            result.Content = cl.xx(a);
+		}
+        private void log_Click(object sender, RoutedEventArgs e)
+        {
+            double a;
+            a = Convert.ToDouble(A.Text);
+            result.Content = cl.log(a);
+        }
     }
 }
